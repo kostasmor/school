@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit student</title>
+
+    <link rel="stylesheet" href="test.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
+   
+</head>
+<body class="bg" onload="tableEdit()">
+    
+    <div class="my-4 container sticky-top" >
+
+        <div class="row">
+            <div class="col-3"> </div>
+     
+            <div class="col-6">
+         <nav class=" navbar rounded navbar-expand-xl navbar-light  " style="background-color: #A6430A; ">
+             <a class="navbar-brand" style="color: #F24968" href="#"> J&L </a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" 
+             aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav">
+                 <li class="nav-item ">
+                   <a class="nav-link  " style="color: #D9D9D9; " href="index.html">Home </a>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle "  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="course" style="color: #D9D9D9" href="#">Courses</a>
+                   <div class="dropdown-menu rounded" aria-labelledby="course" style="background-color: #A6430A; ">
+                   
+                      <a class="dropdown-item" style="color: #D9D9D9" href="Cadd.html">Add</a>
+                      <a class="dropdown-item" style="color: #D9D9D9" href="Cedit.html">Edit</a>
+                      <a class="dropdown-item" style="color: #D9D9D9" href="Cupdate.html">Update</a>
+                      <a class="dropdown-item"  style="color: #D9D9D9" href="TperC.html">Add trainer</a>
+                      <a class="dropdown-item" style="color: #D9D9D9" href="SperC.html">Add student</a>
+                      <a class="dropdown-item" style="color: #D9D9D9"  href="AperC.html">Add Assignment</a>
+                      <a class="dropdown-item" style="color: #D9D9D9" href="TperCupdate.html">Add trainer update</a>
+                      <a class="dropdown-item" style="color: #D9D9D9" href="SperCupdate.html">Add student update</a>
+                      <a class="dropdown-item" style="color: #D9D9D9" href="AperSperC.html">assignments per students per course</a>
+                      <a class="dropdown-item" style="color: #D9D9D9" href="AperCperS.html">assignments per course per student</a>
+                   </div>
+                 </li>
+                 <li class="nav-item dropdown ">
+                   <a class="nav-link dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="trainer" style="color: #D9D9D9" href="#">Trainers</a>
+                   <div class="dropdown-menu rounded" aria-labelledby="trainer" style="background-color: #A6430A; ">
+                     <a class="dropdown-item " style="color: #D9D9D9" href="Tadd.html">Add</a>
+                     <a class="dropdown-item" style="color: #D9D9D9" href="Tedit.html">Edit</a>
+                     <a class="dropdown-item" style="color: #D9D9D9" href="Tupdate.html">Update</a>
+                   </div>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle "  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="student" style="color: #D9D9D9" href="#">Students</a>
+                   <div class="dropdown-menu rounded" aria-labelledby="student" style="background-color: #A6430A; ">
+                     <a class="dropdown-item"  style="color: #D9D9D9"  href="Sadd.html">Add</a>
+                     <a class="dropdown-item" style="color: #D9D9D9" href="Sedit.html">Edit</a>
+                     <a class="dropdown-item" style="color: #D9D9D9" href="Supdate.html">Update</a>
+                   </div>
+                 </li> 
+                 <li class="nav-item dropdown ">
+                     <a class="nav-link dropdown-toggle active"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="as" style="color: #D98E04" href="#">Assignments</a>
+                     <div class="dropdown-menu rounded" aria-labelledby="as" style="background-color: #A6430A; ">
+                         <a class="dropdown-item" style="color: #D9D9D9" href="Aadd.html">Add</a>
+                         <a class="dropdown-item" style="color: #D9D9D9" href="Aedit.html">Edit</a>
+                         <a class="dropdown-item"  style="color: #D98E04" href="Aupdate.html">Update</a>
+                       </div>
+                   </li>
+               </ul>
+             </div>
+           </nav>
+         </div>
+     
+     
+           <div class="col-3"></div>
+     
+         </div>
+         </div>
+
+
+<div class="container">
+
+    <form>
+
+        <div class="form-group">
+            <label for="title">title</label>
+            <input type="text" class="border rounded ta" id="title" placeholder="title"  >
+        </div>
+    
+        <div class="form-group">
+            <label for="description">description</label>
+            <input type="text" class=" border rounded ta" id="description" placeholder="description"  >
+        </div>
+    
+    
+        <div class="form-group row">
+            <label for="subDate">sub Date</label>
+            <input type="date" class="mx-2 border rounded ta" id="subDate"   >
+        </div>
+    
+        <div class="form-group">
+            <label for="oralMark">oral Mark</label>
+            <input type="number" class=" border rounded ta" id="oralMark" placeholder="oral Mark"  >
+        </div>
+    
+        <div class="form-group">
+            <label for="totalMark">total Mark</label>
+            <input type="number" class=" border rounded ta" id="totalMark" placeholder="total Mark"  >
+        </div>
+
+        <input type="reset"  class="btn btn-primary" id="btnId" value="Edit" onclick="Update()">
+
+    </form>
+
+</div>
+
+<br>
+
+<div class="container" >
+
+    <table class="table" id="table">
+        <thead>
+          <tr>
+            
+            <th scope="col">title</th>
+            <th scope="col">description</th>   
+            <th scope="col">sub Date</th>         
+            <th scope="col">oral Mark</th>
+            <th scope="col">total Mark</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           
+            <td>exercises</td>
+                <td>do the maths</td>
+                <td>2020-05-10</td>
+                <td>80</td>
+                <td>100</td>
+            
+          </tr>
+         
+          
+        </tbody>
+      </table>
+
+</div>
+
+<script>
+    var editRow = null;
+    var cols;
+  
+  function display(ctl) {
+    editRow = $(ctl).parents("tr");
+   
+     cols = editRow.children("td");
+  
+    $("#title").val($(cols[0]).text());
+     
+    
+    $("#description").val($(cols[1]).text());
+   
+    
+   
+
+      
+
+        $("#subDate").val($(cols[2]).text());
+        $("#oralMark").val($(cols[3]).text());
+        $("#totalMark").val($(cols[4]).text());
+    
+    
+  
+  
+  }
+  
+  function Update() {
+   
+    $(editRow).remove();
+  
+    
+    let title=$(cols[0]).text();
+    let description=$(cols[1]).text();
+    let subDate=$(cols[2]).text();
+
+    let oralMark=$(cols[3]).text();
+    let totalMark=$(cols[4]).text();
+  
+
+
+
+    let dataLoc
+    
+  
+  if(localStorage.getItem('assignments')){
+    dataLoc=JSON.parse(localStorage.getItem('assignments'));
+  }
+  else{
+    dataLoc=[]
+  }
+  
+   //dataG = localStorage.getItem('row') ? JSON.parse(localStorage.getItem('row')) : [];
+  
+   dataLoc[0]=0;
+  
+ 
+   let i;
+    let a=1;
+    
+    
+
+    let trLen=dataLoc.length-1
+    let datLocLEN=trLen/5;
+    for (i = 1; i <= datLocLEN; i++) {
+      let t=dataLoc[a]  
+    
+    
+    
+  
+if(title==t ){
+  dataLoc.splice(a,1)
+  dataLoc.splice(a,1)
+  dataLoc.splice(a,1)
+  dataLoc.splice(a,1)
+  dataLoc.splice(a,1)
+  
+}
+    a=a+5;
+   
+    
+
+}   
+  
+  
+      let titleNameNew= document.getElementById('title').value;  
+      let descriptionNameNew= document.getElementById('description').value;
+      let subDateNew=document.getElementById('subDate').value;
+
+      let oralMarkNew=document.getElementById('oralMark').value;
+      let totalMarkNew=document.getElementById('totalMark').value;
+  
+
+ 
+      if(!title || !description ||  subDate==="" ) {
+          alert('You must fill all the fields!!!');
+      }
+      else if(oralMark<0 || totalMark<=0 ){
+        
+        alert("not allowed negative oral Mark or total Mark <=0, you should fill it!!!");
+      }
+      else{
+        let table = document.getElementById('table').getElementsByTagName('tbody')[0];
+    
+        let newRow = table.insertRow();
+    
+        let titleCell = newRow.insertCell(0);
+        let desCell = newRow.insertCell(1);
+        
+        let subDateDCell =newRow.insertCell(2);
+        let oralCell =newRow.insertCell(3);
+        let totalCell =newRow.insertCell(4);
+
+      let deleteCell=newRow.insertCell(5);
+  
+      let titleNode = document.createTextNode(titleNameNew);
+        let desNode = document.createTextNode(descriptionNameNew);
+
+        let suDateNode =document.createTextNode(subDateNew);
+        let oralNode =document.createTextNode(oralMarkNew);
+        let totalNode =document.createTextNode(totalMarkNew);
+    
+
+      let deleteNode=document.createElement('button')
+      let editNode=document.createTextNode('Edit');   
+  
+  
+      titleCell.append(titleNode);
+        desCell.append(desNode);
+
+        subDateDCell.append(suDateNode);
+
+        oralCell.append(oralNode);
+        totalCell.append(totalNode);
+  
+      deleteNode.appendChild(editNode);
+      
+  
+      deleteCell.append(deleteNode);
+  
+      deleteNode.classList.add("btn")
+      deleteNode.classList.add("btn-primary");
+      deleteNode.setAttribute("onclick","display(this)")
+         
+      
+      dataLoc.push(titleNameNew);
+      dataLoc.push(descriptionNameNew);
+
+      dataLoc.push(subDateNew);
+
+      dataLoc.push(oralMarkNew);
+      dataLoc.push(totalMarkNew);
+            
+  
+          localStorage.setItem('assignments',JSON.stringify(dataLoc));
+           
+          
+  
+         
+      }
+      
+   
+  
+     
+      }
+  
+      
+  </script>
+
+<script src="Aadd.js"></script>
+</body>
+</html>

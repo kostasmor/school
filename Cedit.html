@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit course</title>
+
+    <link rel="stylesheet" href="test.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
+   
+</head>
+<body class="bg" onload="tableEdit()">
+   
+
+    <div class="my-4 container sticky-top" >
+
+        <div class="row">
+            <div class="col-3"> </div>
+     
+            <div class="col-6">
+         <nav class=" navbar rounded navbar-expand-xl navbar-light  " style="background-color: #A6430A; ">
+             <a class="navbar-brand" style="color: #F24968" href="#"> J&L </a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" 
+             aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav">
+                 <li class="nav-item ">
+                   <a class="nav-link  " style="color: #D9D9D9; " href="index.html">Home </a>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle active"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="course" style="color:#D98E04" href="#">Courses</a>
+                   <div class="dropdown-menu rounded" aria-labelledby="course" style="background-color: #A6430A; ">
+                    <a class="dropdown-item" style="color: #D9D9D9" href="Cadd.html">Add</a>
+                    <a class="dropdown-item" style="color:#D98E04" href="Cedit.html">Edit</a>
+                    <a class="dropdown-item" style="color: #D9D9D9" href="Cupdate.html">Update</a>
+                    <a class="dropdown-item"  style="color: #D9D9D9" href="TperC.html">Add trainer</a>
+                    <a class="dropdown-item" style="color: #D9D9D9" href="SperC.html">Add student</a>
+                    <a class="dropdown-item" style="color: #D9D9D9"  href="AperC.html">Add Assignment</a>
+                    <a class="dropdown-item" style="color: #D9D9D9" href="TperCupdate.html">Add trainer update</a>
+                    <a class="dropdown-item" style="color: #D9D9D9" href="SperCupdate.html">Add student update</a>
+                    <a class="dropdown-item" style="color: #D9D9D9" href="AperSperC.html">assignments per students per course</a>
+                    <a class="dropdown-item" style="color: #D9D9D9" href="AperCperS.html">assignments per course per student</a>
+                   </div>
+                 </li>
+                 <li class="nav-item dropdown ">
+                   <a class="nav-link dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="trainer" style="color: #D9D9D9" href="#">Trainers</a>
+                   <div class="dropdown-menu rounded" aria-labelledby="trainer" style="background-color: #A6430A; ">
+                     <a class="dropdown-item " style="color: #D9D9D9" href="Tadd.html">Add</a>
+                     <a class="dropdown-item" style="color: #D9D9D9" href="Tedit.html">Edit</a>
+                     <a class="dropdown-item" style="color: #D9D9D9" href="Tupdate.html">Update</a>
+                   </div>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle "  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="student" style="color: #D9D9D9" href="#">Students</a>
+                   <div class="dropdown-menu rounded" aria-labelledby="student" style="background-color: #A6430A; ">
+                     <a class="dropdown-item" style="color: #D9D9D9" href="Sadd.html">Add</a>
+                     <a class="dropdown-item" style="color: #D9D9D9" href="Sedit.html">Edit</a>
+                     <a class="dropdown-item" style="color: #D9D9D9" href="Supdate.html">Update</a>
+                   </div>
+                 </li> 
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="as" style="color: #D9D9D9" href="#">Assignments</a>
+                     <div class="dropdown-menu rounded" aria-labelledby="as" style="background-color: #A6430A; ">
+                         <a class="dropdown-item" style="color: #D9D9D9" href="Aadd.html">Add</a>
+                         <a class="dropdown-item" style="color: #D9D9D9" href="Aedit.html">Edit</a>
+                         <a class="dropdown-item" style="color: #D9D9D9" href="Aupdate.html">Update</a>
+                       </div>
+                   </li>
+               </ul>
+             </div>
+           </nav>
+         </div>
+     
+     
+           <div class="col-3"></div>
+     
+         </div>
+         </div>
+
+
+<div class="container">
+
+<form>
+
+    <div class="form-group  row">
+        <label for="title">Title</label>
+        <input type="text" class="mx-3 border rounded ta" id="title" placeholder="title"  maxlength="20"  >
+    </div>
+
+    <div class="form-group row" > 
+        <label for="steam">Steam</label>
+        <input type="text" class="mx-1 border rounded ta" id="steam" placeholder="steam"   maxlength="20" >
+    </div>
+
+    <fieldset class="form-group">
+        <div class="row">
+          <legend class="col-form-label col-1 pt-0">Type</legend>
+          <div class="col-6">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="type" id="full-time" value="Full-time" >
+              <label class="form-check-label" for="full-time">
+                Full-time
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="type" id="part-time" value="Part-time">
+              <label class="form-check-label" for="part-time">
+                Part-time
+              </label>
+            </div>
+           <div class="col-5"></div>
+          </div>
+        </div>
+      </fieldset>
+
+    <div class="form-group row">
+        <label for="st_date">Start date</label>
+        <input type="date" class="mx-2 border rounded ta" id="st_date"   >
+    </div>
+
+    <div class="form-group row" >
+        <label for="en_date">End date</label>
+        <input type="date" class="mx-3 border rounded ta" id="en_date"    >
+    </div>
+
+   
+
+    <input type="reset"  class="btn btn-primary" id="btnId" value="Edit course" onclick="Update()">
+
+</form>
+
+</div>
+
+<br>
+
+<div class="container" >
+
+    <table class="table" id="table">
+        <thead>
+          <tr>
+            
+            <th scope="col">Title</th>
+            <th scope="col">Steam</th>
+            <th scope="col">Type</th>
+            <th scope="col">Start date</th>
+            <th scope="col">End date</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+           
+            <td>math1</td>
+            <td>general</td>
+            <td>full-time</td>
+            <td>2020-05-05</td>
+            <td>2021-05-05</td>
+            <td><button class="btn btn-primary" onclick="display(this)">Edit</button></td>
+          </tr>
+          
+          
+        </tbody>
+      </table>
+
+</div>
+
+<script>
+    var editRow = null;
+    var cols;
+  
+  function display(ctl) {
+    editRow = $(ctl).parents("tr");
+   
+     cols = editRow.children("td");
+  
+    $("#title").val($(cols[0]).text());
+     
+    
+    $("#steam").val($(cols[1]).text());
+   
+    
+   
+
+        if( $(cols[2]).text()=="Full-time"){
+           $("#full-time").prop("checked",true);
+            
+        }else if(  $(cols[2]).text()=="Part-time"){
+            $("#part-time").prop("checked",true);
+            
+        }
+
+        $("#st_date").val($(cols[3]).text());
+        $("#en_date").val($(cols[4]).text());
+        
+    
+    
+  
+  
+  }
+  
+  function Update() {
+   
+    $(editRow).remove();
+  
+    
+    let title=$(cols[0]).text();
+    let steam=$(cols[1]).text();
+    let type=$(cols[2]).text();
+
+    let st_date=$(cols[3]).text();
+    let en_date=$(cols[4]).text();
+  
+
+
+    if(en_date<st_date){
+            en_date=st_date;
+            alert("you can't set end date before start date");
+
+        }
+
+    let dataLoc
+    
+  
+  if(localStorage.getItem('course')){
+    dataLoc=JSON.parse(localStorage.getItem('course'));
+  }
+  else{
+    dataLoc=[]
+  }
+  
+   //dataG = localStorage.getItem('row') ? JSON.parse(localStorage.getItem('row')) : [];
+  
+   dataLoc[0]=0;
+  
+ 
+   let i;
+    let a=1;
+    let b=2;
+    let c=3;
+    let d=4;
+    let e=5;
+
+    let trLen=dataLoc.length-1
+    let datLocLEN=trLen/5;
+    for (i = 1; i <= datLocLEN; i++) {
+      let t=dataLoc[a]  
+    let st=dataLoc[b]
+    let ty= dataLoc[c]
+  
+if(title==t && steam==st && type==ty){
+  dataLoc.splice(a,1)
+  dataLoc.splice(a,1)
+  dataLoc.splice(a,1)
+  dataLoc.splice(a,1)
+  dataLoc.splice(a,1)
+}
+    a=a+5;
+    b=b+5;
+    c=c+5;
+    d=d+5;
+    e=e+5;
+
+}   
+  
+  
+      let titleNew= document.getElementById('title').value;  
+      let steamNew= document.getElementById('steam').value;
+      let typeNew=null;
+  
+
+      if( document.getElementById('full-time').checked){
+
+        typeNew=document.getElementById('full-time').value;
+
+}
+else if( document.getElementById('part-time').checked){
+
+    typeNew=document.getElementById('part-time').value;
+
+}
+
+
+        let st_dateNew=document.getElementById('st_date').value;
+        let en_dateNew=document.getElementById('en_date').value;
+        
+
+
+
+        if(en_dateNew<st_dateNew){
+            en_dateNew=st_dateNew;
+            alert("you can't set end date before start date");
+
+        }
+
+
+      if(!titleNew || !steamNew || !typeNew || en_dateNew==="" || st_dateNew==="") {
+          alert('You must fill all the fields!!!');
+      }
+      else{
+      let table = document.getElementById('table').getElementsByTagName('tbody')[0];
+  
+      let newRow = table.insertRow();
+  
+      let tCell = newRow.insertCell(0);
+        let sCell = newRow.insertCell(1);
+        let tyCell =newRow.insertCell(2);
+        let stDCell =newRow.insertCell(3);
+        let enDCell =newRow.insertCell(4);
+      let deleteCell=newRow.insertCell(5);
+  
+      let tNode = document.createTextNode(titleNew);
+        let sNode = document.createTextNode(steamNew);
+        let tyNode =document.createTextNode(typeNew);
+        let stNode =document.createTextNode(en_dateNew);
+        let enNode =document.createTextNode(st_dateNew);
+    
+
+      let deleteNode=document.createElement('button')
+      let editNode=document.createTextNode('Edit');   
+  
+  
+      tCell.append(tNode);
+        sCell.append(sNode);
+        tyCell.append(tyNode);
+
+        stDCell.append(stNode);
+        enDCell.append(enNode);
+  
+      deleteNode.appendChild(editNode);
+      
+  
+      deleteCell.append(deleteNode);
+  
+      deleteNode.classList.add("btn")
+      deleteNode.classList.add("btn-primary");
+      deleteNode.setAttribute("onclick","display(this)")
+         
+      
+      dataLoc.push(titleNew);
+      dataLoc.push(steamNew);
+      dataLoc.push(typeNew);
+
+      dataLoc.push(en_dateNew);
+      dataLoc.push(st_dateNew);
+  
+          localStorage.setItem('course',JSON.stringify(dataLoc));
+           
+          
+  
+         
+      }
+      
+   
+  
+     
+      }
+  
+      
+  </script>
+
+<script src="Cadd.js"></script>
+</body>
+</html>

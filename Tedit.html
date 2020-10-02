@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit trainer</title>
+
+    <link rel="stylesheet" href="test.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
+   
+</head>
+<body class="bg" onload="tableEdit()">
+   
+
+  <div class="my-4 container sticky-top" >
+
+        <div class="row">
+            <div class="col-3"> </div>
+     
+            <div class="col-6">
+         <nav class=" navbar rounded navbar-expand-xl navbar-light  " style="background-color: #A6430A; ">
+             <a class="navbar-brand" style="color: #F24968" href="index.html"> J&L </a>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" 
+             aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav">
+                 <li class="nav-item ">
+                   <a class="nav-link  " style="color: #D9D9D9; " href="index.html">Home </a>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="course" style="color: #D9D9D9" href="#">Courses</a>
+                   <div class="dropdown-menu rounded" aria-labelledby="course" style="background-color: #A6430A; ">
+                    <a class="dropdown-item" style="color: #D9D9D9" href="Cadd.html">Add</a>
+                    <a class="dropdown-item" style="color: #D9D9D9" href="Cedit.html">Edit</a>
+                    <a class="dropdown-item" style="color: #D9D9D9" href="Cupdate.html">Update</a>
+                    <a class="dropdown-item"  style="color: #D9D9D9" href="TperC.html">Add trainer</a>
+                    <a class="dropdown-item" style="color: #D9D9D9" href="SperC.html">Add student</a>
+                    <a class="dropdown-item" style="color: #D9D9D9"  href="AperC.html">Add Assignment</a>
+                    <a class="dropdown-item" style="color: #D9D9D9" href="TperCupdate.html">Add trainer update</a>
+                    <a class="dropdown-item" style="color: #D9D9D9" href="SperCupdate.html">Add student update</a>
+                    <a class="dropdown-item" style="color: #D9D9D9" href="AperSperC.html">assignments per students per course</a>
+                    <a class="dropdown-item" style="color: #D9D9D9" href="AperCperS.html">assignments per course per student</a>
+                   </div>
+                 </li>
+                 <li class="nav-item dropdown active">
+                   <a class="nav-link dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="trainer" style="color:#D98E04" href="#">Trainers</a>
+                   <div class="dropdown-menu rounded" aria-labelledby="trainer" style="background-color: #A6430A; ">
+                     <a class="dropdown-item " style="color: #D9D9D9;" href="Tadd.html">Add</a>
+                     <a class="dropdown-item" style="color: #D98E04;" href="Tedit.html">Edit</a>
+                     <a class="dropdown-item" style="color: #D9D9D9;" href="Tupdate.html">Update</a>
+                   </div>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle "  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="student" style="color: #D9D9D9" href="#">Students</a>
+                   <div class="dropdown-menu rounded" aria-labelledby="student" style="background-color: #A6430A; ">
+                     <a class="dropdown-item" style="color: #D9D9D9" href="Sadd.html">Add</a>
+                     <a class="dropdown-item" style="color: #D9D9D9" href="Sedit.html">Edit</a>
+                     <a class="dropdown-item" style="color: #D9D9D9" href="#">Update</a>
+                   </div>
+                 </li> 
+                 <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="as" style="color: #D9D9D9" href="#">Assignments</a>
+                     <div class="dropdown-menu rounded" aria-labelledby="as" style="background-color: #A6430A; ">
+                         <a class="dropdown-item" style="color: #D9D9D9" href="#">Add</a>
+                         <a class="dropdown-item" style="color: #D9D9D9" href="#">Edit</a>
+                         <a class="dropdown-item" style="color: #D9D9D9" href="#">Update</a>
+                       </div>
+                   </li>
+               </ul>
+             </div>
+           </nav>
+         </div>
+     
+     
+           <div class="col-3"></div>
+     
+         </div>
+         </div>
+
+
+<div class="container">
+
+<form>
+
+    <div class="form-group">
+        <label for="first_name">First Name</label>
+        <input type="text" class="border rounded ta" id="first_name" placeholder="first name" maxlength="20" >
+    </div>
+
+    <div class="form-group">
+        <label for="last_name">Last Name</label>
+        <input type="text" class=" border rounded ta" id="last_name" placeholder="last name" maxlength="20" >
+    </div>
+
+    <div class="form-group">
+        <label for="sub">Subject</label>
+        <input type="text" class="mx-4 border rounded ta" id="sub" placeholder="subject" maxlength="20" >
+    </div>
+
+    
+    <!-- <button type="button" id="btnId" class="btn btn-primary" onclick="Update();"> Add</button> -->
+   
+    <input type="reset"  class="btn btn-primary" id="btnId" value="Edit trainer" onclick="Update();">
+
+</form>
+
+</div>
+
+<br>
+
+<div class="container" >
+
+    <table class="table table-editable" id="table">
+        <thead>
+          <tr>
+            
+            <th scope="col">First name</th>
+            <th scope="col">Last name</th>
+            <th scope="col">Subject</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+      
+        </tbody>
+      </table>
+
+</div>
+
+<script>
+  var editRow = null;
+  var cols;
+
+function display(ctl) {
+  editRow = $(ctl).parents("tr");
+ 
+   cols = editRow.children("td");
+
+   $("#first_name").val($(cols[0]).text());
+   
+  
+  $("#last_name").val($(cols[1]).text());
+ 
+  
+  $("#sub").val($(cols[2]).text());
+  
+
+
+}
+
+function Update() {
+ 
+  $(editRow).remove();
+
+  
+  let f=$(cols[0]).text();
+  let l=$(cols[1]).text();
+  let s=$(cols[2]).text();
+
+  let dataLoc
+  
+
+if(localStorage.getItem('row')){
+  dataLoc=JSON.parse(localStorage.getItem('row'));
+}
+else{
+  dataLoc=[]
+}
+
+ //dataG = localStorage.getItem('row') ? JSON.parse(localStorage.getItem('row')) : [];
+
+ dataLoc[0]=0;
+
+ let i;
+    let a=1;
+    let b=2;
+    let c=3;
+ 
+    let trLen=dataLoc.length-1;
+let datLocLEN=trLen/3;
+for (i = 1; i <= datLocLEN; i++) {
+
+
+if( f==dataLoc[a] && l==dataLoc[b] && s==dataLoc[c]){
+
+  dataLoc.splice(a,1)
+  dataLoc.splice(a,1)
+  dataLoc.splice(a,1)
+}
+
+
+
+a=a+3;
+b=b+3;
+c=c+3;
+
+}   
+ 
+
+    let fn= document.getElementById('first_name').value;   
+    let ln= document.getElementById('last_name').value;
+    let sn= document.getElementById('sub').value;
+    let letters = /^[A-Za-z]+$/;
+    if(!fn || !ln || !s) {
+        alert('You must fill all the fields!!!');
+    }
+    else if(!fn.match(letters) || !ln.match(letters) || !s.match(letters)){
+        alert("only A-Z ,a-z");
+    }
+    else{
+    let table = document.getElementById('table').getElementsByTagName('tbody')[0];
+
+    let newRow = table.insertRow();
+
+    let fnCell = newRow.insertCell(0);
+    let lnCell = newRow.insertCell(1);
+    let sCell =newRow.insertCell(2);
+    let deleteCell=newRow.insertCell(3);
+
+    let fnNode = document.createTextNode(fn);
+    let lnNode = document.createTextNode(ln);
+    let sNode =document.createTextNode(sn);
+
+    let deleteNode=document.createElement('button')
+    let editNode=document.createTextNode('Edit');   
+
+
+    fnCell.append(fnNode);
+    lnCell.append(lnNode);
+    sCell.append(sNode);
+
+    deleteNode.appendChild(editNode);
+    
+
+    deleteCell.append(deleteNode);
+
+    deleteNode.classList.add("btn")
+    deleteNode.classList.add("btn-primary");
+    deleteNode.setAttribute("onclick","display(this)")
+       
+    
+    dataLoc.push(fn);
+    dataLoc.push(ln);
+    dataLoc.push(sn);
+
+        localStorage.setItem('row',JSON.stringify(dataLoc));
+         
+        
+
+       
+    }
+    
+ 
+
+   
+    }
+
+    
+</script>
+
+<script src="add.js"></script>
+</body>
+</html>
